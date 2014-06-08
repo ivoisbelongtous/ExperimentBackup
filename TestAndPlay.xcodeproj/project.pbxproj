@@ -10,6 +10,8 @@
 		945EBE2719445737009ADA4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945EBE2619445737009ADA4D /* Foundation.framework */; };
 		945EBE2A19445737009ADA4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 945EBE2919445737009ADA4D /* main.m */; };
 		945EBE2E19445737009ADA4D /* TestAndPlay.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 945EBE2D19445737009ADA4D /* TestAndPlay.1 */; };
+		945EBE361944597A009ADA4D /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 945EBE351944597A009ADA4D /* XYZPerson.m */; };
+		94B79BF21944C84300C5CF62 /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B79BF11944C84300C5CF62 /* XYZShoutingPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		945EBE2919445737009ADA4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		945EBE2C19445737009ADA4D /* TestAndPlay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestAndPlay-Prefix.pch"; sourceTree = "<group>"; };
 		945EBE2D19445737009ADA4D /* TestAndPlay.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TestAndPlay.1; sourceTree = "<group>"; };
+		945EBE341944597A009ADA4D /* XYZPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZPerson.h; sourceTree = "<group>"; };
+		945EBE351944597A009ADA4D /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPerson.m; sourceTree = "<group>"; };
+		94B79BF01944C84300C5CF62 /* XYZShoutingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZShoutingPerson.h; sourceTree = "<group>"; };
+		94B79BF11944C84300C5CF62 /* XYZShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZShoutingPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				945EBE2919445737009ADA4D /* main.m */,
+				945EBE341944597A009ADA4D /* XYZPerson.h */,
+				945EBE351944597A009ADA4D /* XYZPerson.m */,
+				94B79BF01944C84300C5CF62 /* XYZShoutingPerson.h */,
+				94B79BF11944C84300C5CF62 /* XYZShoutingPerson.m */,
 				945EBE2D19445737009ADA4D /* TestAndPlay.1 */,
 				945EBE2B19445737009ADA4D /* Supporting Files */,
 			);
@@ -114,6 +124,7 @@
 		945EBE1B19445737009ADA4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XYZ;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ivo Murrell";
 			};
@@ -139,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945EBE361944597A009ADA4D /* XYZPerson.m in Sources */,
+				94B79BF21944C84300C5CF62 /* XYZShoutingPerson.m in Sources */,
 				945EBE2A19445737009ADA4D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +266,7 @@
 				945EBE3319445737009ADA4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

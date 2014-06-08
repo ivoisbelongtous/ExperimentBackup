@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XYZPerson.h"
+#import "XYZShoutingPerson.h"
 
 int main(int argc, const char * argv[])
 {
@@ -15,7 +17,9 @@ int main(int argc, const char * argv[])
         
         // insert code here...
         NSLog(@"Hello, World!");
-        
+        XYZShoutingPerson *person = [XYZShoutingPerson person];
+        [person sayHello];
+        [person nilTest];
     }
     return 0;
 }
