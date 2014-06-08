@@ -10,17 +10,39 @@
 
 @implementation XYZPerson
 
-NSString *firstName = @"Ivo";
 NSString *placeOfBirth;
+
+- (id)init
+{
+    return [self initWithFirstName:@"John" lastName:@"Smith" dateOfBirth:nil];
+}
+
+- (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB
+{
+    self = [super init];
+    if(self)
+    {
+        _firstName = aFirstName;
+        _lastName = aLastName;
+        _dateOfBirth = aDOB;
+    }
+    return self;
+}
 
 + (id)person
 {
     return [[self alloc] init];
 }
 
++ (id)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB
+{
+    return [[self alloc] initWithFirstName:aFirstName lastName:aLastName dateOfBirth:aDOB];
+}
+
 - (void)sayHello
 {
-    [self saySomething:@"Hello wooooooorld!"];
+    NSString *greeting = [NSString stringWithFormat:@"Hi, %@ %@!", self.firstName, self.lastName];
+    [self saySomething:greeting];
 }
 
 - (void)sayGoodbye
@@ -30,7 +52,8 @@ NSString *placeOfBirth;
 
 - (void)sayName
 {
-    [self saySomething:@"My name is Ivo."];
+    NSString *greeting = [NSString stringWithFormat:@"My name is %@.", self.firstName];
+    [self saySomething:greeting];
 }
 
 - (void)saySomething:(NSString *)greeting
