@@ -10,9 +10,10 @@
 
 @interface XYZPerson : NSObject
 
-@property (atomic) NSString *firstName;
+@property (copy) NSString *firstName;
 @property NSString *lastName;
 @property NSDate *dateOfBirth;
+@property (weak) XYZPerson *partner;
 
 + (id)person;
 + (id)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB;

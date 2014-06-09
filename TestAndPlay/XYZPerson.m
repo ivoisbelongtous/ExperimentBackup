@@ -22,7 +22,7 @@ NSString *placeOfBirth;
     self = [super init];
     if(self)
     {
-        _firstName = aFirstName;
+        _firstName = [aFirstName copy];
         _lastName = aLastName;
         _dateOfBirth = aDOB;
     }
@@ -66,6 +66,11 @@ NSString *placeOfBirth;
     if (!placeOfBirth) {
         NSLog(@"Successfully initialised as nil! :)");
     }
+}
+
+- (void)dealloc
+{
+    [self saySomething:@"I'm dying!! :'("];
 }
 
 @end

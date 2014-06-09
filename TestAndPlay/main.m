@@ -18,9 +18,12 @@ int main(int argc, const char * argv[])
         // insert code here...
         NSLog(@"Hello, World!");
         NSDate *myDOB = [NSDate dateWithString:@"1995-01-10 01:00:00 +0000"];
-        XYZShoutingPerson *person = [XYZShoutingPerson personWithFirstName:@"Ivo" lastName:@"Murrell" dateOfBirth:myDOB];
+        NSMutableString *testMute = [NSMutableString stringWithString:@"Ivo"];
+        XYZShoutingPerson *person = [XYZShoutingPerson personWithFirstName:testMute lastName:@"Murrell" dateOfBirth:myDOB];
+        [testMute appendString:@"ry"];
         [person sayHello];
         [person sayName];
+        person = nil;
     }
     return 0;
 }
