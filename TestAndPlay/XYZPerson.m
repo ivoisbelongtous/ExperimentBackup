@@ -8,6 +8,13 @@
 
 #import "XYZPerson.h"
 
+@interface XYZPerson ()
+
+@property (readwrite) NSNumber *height;
+@property (readwrite) NSNumber *weight;
+
+@end
+
 @implementation XYZPerson
 
 NSString *placeOfBirth;
@@ -71,6 +78,16 @@ NSString *placeOfBirth;
 - (void)dealloc
 {
     [self saySomething:@"I'm dying!! :'("];
+}
+
+- (void)measureHeight
+{
+    self.height = @170;
+}
+
+-(void)measureWeight
+{
+    self.weight = @65;
 }
 
 @end

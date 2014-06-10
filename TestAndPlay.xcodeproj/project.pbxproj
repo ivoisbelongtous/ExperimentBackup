@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9408BF7519467B4A00C1231F /* XYZPerson+XYZPersonNameReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9408BF7419467B4A00C1231F /* XYZPerson+XYZPersonNameReverse.m */; };
 		945EBE2719445737009ADA4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945EBE2619445737009ADA4D /* Foundation.framework */; };
 		945EBE2A19445737009ADA4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 945EBE2919445737009ADA4D /* main.m */; };
 		945EBE2E19445737009ADA4D /* TestAndPlay.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 945EBE2D19445737009ADA4D /* TestAndPlay.1 */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9408BF7319467B4A00C1231F /* XYZPerson+XYZPersonNameReverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYZPerson+XYZPersonNameReverse.h"; sourceTree = "<group>"; };
+		9408BF7419467B4A00C1231F /* XYZPerson+XYZPersonNameReverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYZPerson+XYZPersonNameReverse.m"; sourceTree = "<group>"; };
 		945EBE2319445737009ADA4D /* TestAndPlay */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestAndPlay; sourceTree = BUILT_PRODUCTS_DIR; };
 		945EBE2619445737009ADA4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		945EBE2919445737009ADA4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9408BF7919467D4200C1231F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9408BF7319467B4A00C1231F /* XYZPerson+XYZPersonNameReverse.h */,
+				9408BF7419467B4A00C1231F /* XYZPerson+XYZPersonNameReverse.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		945EBE1A19445737009ADA4D = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				945EBE2919445737009ADA4D /* main.m */,
+				9408BF7919467D4200C1231F /* Categories */,
 				945EBE341944597A009ADA4D /* XYZPerson.h */,
 				945EBE351944597A009ADA4D /* XYZPerson.m */,
 				94B79BF01944C84300C5CF62 /* XYZShoutingPerson.h */,
@@ -152,6 +165,7 @@
 			files = (
 				945EBE361944597A009ADA4D /* XYZPerson.m in Sources */,
 				94B79BF21944C84300C5CF62 /* XYZShoutingPerson.m in Sources */,
+				9408BF7519467B4A00C1231F /* XYZPerson+XYZPersonNameReverse.m in Sources */,
 				945EBE2A19445737009ADA4D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

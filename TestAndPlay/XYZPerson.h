@@ -14,6 +14,8 @@
 @property NSString *lastName;
 @property NSDate *dateOfBirth;
 @property (weak) XYZPerson *partner;
+@property (readonly) NSNumber *height;
+@property (readonly) NSNumber *weight;
 
 + (id)person;
 + (id)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB;
@@ -22,5 +24,7 @@
 - (void)sayGoodbye;
 - (void)sayName;
 - (void)nilTest;
+- (void)measureHeight;
+- (void)measureWeight;
 
 @end

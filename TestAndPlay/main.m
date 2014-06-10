@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XYZPerson.h"
 #import "XYZShoutingPerson.h"
+#import "XYZPerson+XYZPersonNameReverse.h"
 
 int main(int argc, const char * argv[])
 {
@@ -23,6 +23,7 @@ int main(int argc, const char * argv[])
         [testMute appendString:@"ry"];
         [person sayHello];
         [person sayName];
+        [person sayNameInReverse];
         person = nil;
     }
     return 0;
