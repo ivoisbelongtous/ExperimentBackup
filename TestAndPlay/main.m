@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "XYZShoutingPerson.h"
 #import "XYZPerson+XYZPersonNameReverse.h"
+#import "XYZSpeakingPerson.h"
+#import "XYZTestInstance.h"
 
 int main(int argc, const char * argv[])
 {
@@ -17,6 +19,8 @@ int main(int argc, const char * argv[])
         
         // insert code here...
         NSLog(@"Hello, World!");
+        XYZTestInstance *testInstance = [[XYZTestInstance alloc] init];
+        [testInstance errorTest];
         NSDate *myDOB = [NSDate dateWithString:@"1995-01-10 01:00:00 +0000"];
         NSMutableString *testMute = [NSMutableString stringWithString:@"Ivo"];
         XYZShoutingPerson *person = [XYZShoutingPerson personWithFirstName:testMute lastName:@"Murrell" dateOfBirth:myDOB];
