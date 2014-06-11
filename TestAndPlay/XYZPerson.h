@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XYZSpeakingPerson.h"
 
-@interface XYZPerson : NSObject
+@interface XYZPerson : NSObject <XYZSpeakingPerson>
 
 @property (copy) NSString *firstName;
 @property NSString *lastName;
@@ -17,7 +18,7 @@
 @property (readonly) NSNumber *height;
 @property (readonly) NSNumber *weight;
 
-+ (id)person;
++ (instancetype)person;
 + (id)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB;
 - (void)saySomething:(NSString *)greeting;
 - (void)sayHello;

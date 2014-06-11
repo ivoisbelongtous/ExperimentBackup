@@ -10,7 +10,7 @@
 
 @protocol XYZSpeakingPerson <NSObject>
 
-- (void)xyzfakeMethod;
+//- (void)xyzfakeMethod;
 
 @optional
 

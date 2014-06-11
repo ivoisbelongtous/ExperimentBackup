@@ -36,7 +36,7 @@ NSString *placeOfBirth;
     return self;
 }
 
-+ (id)person
++ (XYZPerson *)person
 {
     return [[self alloc] init];
 }

@@ -13,14 +13,17 @@
 
 - (void)errorTest
 {
+    id <XYZSpeakingPerson> speakingPerson = [XYZPerson person];
     XYZPerson *helloPerson = [XYZPerson person];
     XYZPerson *helloPerson2 = [[XYZPerson alloc] init];
-    id <XYZSpeakingPerson> speakingPerson = helloPerson;
-    id <XYZSpeakingPerson> speakingPerson2 = helloPerson2;
+    speakingPerson = [[XYZPerson alloc] init];
+    id <XYZSpeakingPerson> speakingPerson2 = helloPerson;
+    speakingPerson2 = helloPerson2;
+    speakingPerson = [XYZPerson person];
     if ([speakingPerson respondsToSelector:@selector(saySomething:)]) {
         [speakingPerson saySomething:@"Test successful."];
     }
-    [speakingPerson xyzfakeMethod];
+//    [speakingPerson xyzfakeMethod];
 }
 
 @end
