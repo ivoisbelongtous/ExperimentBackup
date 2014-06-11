@@ -13,10 +13,14 @@
 
 - (void)errorTest
 {
-    self.speakingPerson = [XYZPerson person];
-    if ([self.speakingPerson respondsToSelector:@selector(saySomething:)]) {
-        [self.speakingPerson saySomething:@"Test successful."];
+    XYZPerson *helloPerson = [XYZPerson person];
+    XYZPerson *helloPerson2 = [[XYZPerson alloc] init];
+    id <XYZSpeakingPerson> speakingPerson = helloPerson;
+    id <XYZSpeakingPerson> speakingPerson2 = helloPerson2;
+    if ([speakingPerson respondsToSelector:@selector(saySomething:)]) {
+        [speakingPerson saySomething:@"Test successful."];
     }
+    [speakingPerson xyzfakeMethod];
 }
 
 @end

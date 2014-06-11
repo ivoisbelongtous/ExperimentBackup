@@ -11,7 +11,7 @@
 
 @interface XYZTestInstance : NSObject
 
-@property (weak) id <XYZSpeakingPerson> speakingPerson;
+@property id <XYZSpeakingPerson> speakingPerson;
 
 - (void)errorTest;
 
