@@ -19,12 +19,12 @@
 
 NSString *placeOfBirth;
 
-- (id)init
+- (instancetype)init
 {
     return [self initWithFirstName:@"John" lastName:@"Smith" dateOfBirth:nil];
 }
 
-- (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB
+- (instancetype)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB
 {
     self = [super init];
     if(self)
@@ -36,12 +36,12 @@ NSString *placeOfBirth;
     return self;
 }
 
-+ (XYZPerson *)person
++ (instancetype)person
 {
     return [[self alloc] init];
 }
 
-+ (id)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB
++ (instancetype)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB
 {
     return [[self alloc] initWithFirstName:aFirstName lastName:aLastName dateOfBirth:aDOB];
 }

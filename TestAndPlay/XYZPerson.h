@@ -19,7 +19,7 @@
 @property (readonly) NSNumber *weight;
 
 + (instancetype)person;
-+ (id)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB;
++ (instancetype)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName dateOfBirth:(NSDate *)aDOB;
 - (void)saySomething:(NSString *)greeting;
 - (void)sayHello;
 - (void)sayGoodbye;
