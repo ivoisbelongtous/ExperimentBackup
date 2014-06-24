@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8BFAB274-C0C5-4D37-9F38-CD534E354C2D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestAndPlay</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>774F1635-B9F7-4499-A60D-CA670D6754A4</key>
+		<string>https://github.com/ivoisbelongtous/ExperimentBackup.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestAndPlay.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>774F1635-B9F7-4499-A60D-CA670D6754A4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ivoisbelongtous/ExperimentBackup.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>774F1635-B9F7-4499-A60D-CA670D6754A4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>774F1635-B9F7-4499-A60D-CA670D6754A4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestAndPlay</string>
+		</dict>
+	</array>
+</dict>
+</plist>
